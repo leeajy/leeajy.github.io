@@ -19,10 +19,10 @@
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
   }*/
-  $('#header').addClass('header-scrolled');
+  /*$('#header').addClass('header-scrolled');*/
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  var scrolltoOffset = $('#header').outerHeight() - 1;
+  var scrolltoOffset = $('#about').outerHeight() - 1;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
