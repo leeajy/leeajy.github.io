@@ -8,7 +8,7 @@
   "use strict";
 
   // Toggle .header-scrolled class to #header when page is scrolled
-  /*$(window).scroll(function() {
+  $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
     } else {
@@ -18,8 +18,7 @@
 
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
-  }*/
-  $('#header').addClass('header-scrolled');
+  }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
@@ -59,7 +58,7 @@
     if (window.location.hash) {
       var initial_nav = window.location.hash;
       if ($(initial_nav).length) {
-        var scrollto = $(initial_nav).offset().top;
+        var scrollto = $(initial_nav).offset().top - scrolltoOffset;
         $('html, body').animate({
           scrollTop: scrollto
         }, 1500, 'easeInOutExpo');
