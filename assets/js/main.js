@@ -14,11 +14,11 @@
     } else {
       $('#header').removeClass('header-scrolled');
     }
-  });*/
+  });
 
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
-  }
+  }*/
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
