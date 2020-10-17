@@ -1,4 +1,4 @@
-Thanks for downloading this template!
+Front end for personal website using following Bootstrap template:
 
 Template Name: Alstar
 Template URL: https://bootstrapmade.com/alstar-free-parallax-bootstrap-template/
